@@ -1,0 +1,64 @@
+<ons-page>
+  <ons-toolbar>
+    <div class="left">
+      <ons-toolbar-button ng-click="menu.toggle()"><ons-icon icon="ion-navicon-round" fixed-width="false"></ons-icon></ons-toolbar-button>
+    </div>
+    <div class="center">LOCATIE VELD</div>
+  </ons-toolbar>
+
+  <div class="app-page">
+      <ons-list id="list">
+
+        <ons-list-item  class="list-item-container green">
+          <div class="list-item-left">
+            <img src="images/profile_pics/profile_adam.jpg" class="avator">
+          </div>
+           <div class="list-item-content">
+              <div class="name">Adam de Boer
+              </div>
+              <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
+            </div>
+          <div class="list-item-right-green">
+            <span class="car"><img sr=""></span>
+          </div>
+        </ons-list-item>
+
+        <ons-list-item  class="list-item-container green ">
+          <div class="list-item-left">
+            <img src="images/profile_pics/profile_james.jpg" class="avator">
+          </div>
+           <div class="list-item-content">
+              <div class="name">Daniel
+                <span class="lucent">@Danny</span>
+              </div>
+
+           
+            </div>
+          <div class="list-item-right-red">
+           
+          </div>
+        </ons-list-item>
+        <ons-list-item  class="list-item-container red">
+          <div class="list-item-left">
+             <img src="images/profile_pics/profile_kevin.jpg" class="avator">
+          </div>
+           <div class="list-item-content">
+              <div class="name">Daniel
+                <span class="lucent">@Danny</span>
+              </div>
+             
+            </div>
+          <div class="list-item-right-red">
+           <div id="test"></div>
+          </div>
+        </ons-list-item>
+      </ons-list>
+
+      <script>
+        document.getElementbyId("test").innerHTML =
+        obj.players[1].name+" "obj.players[1].position;
+        </script>
+    </div>
+  </div>
+
+</ons-page>

@@ -1,0 +1,70 @@
+<ons-page>
+  <ons-toolbar>
+    <div class="left">
+      <ons-toolbar-button ng-click="menu.toggle()"><ons-icon icon="ion-navicon-round" fixed-width="false"></ons-icon></ons-toolbar-button>
+    </div>
+    <div class="center">LOCATIE VELD</div>
+  </ons-toolbar>
+
+  <div class="app-page">
+    <div class="app-page-photo">   
+      <ons-row class="app-map">   
+        <ons-col>
+          <map center="[51.410321, 5.491576]">
+            <marker
+                position="[51.410321, 5.491576]"
+                title="Eindhoven Raptors"
+                animation="Animation.BOUNCE" 
+                visible="true" ></marker>
+          </map>
+        </ons-col>
+      </ons-row>
+      <ons-list modifier="inset" style="margin-top: 10px">
+        <ons-list-item>
+          <div class="app-open-desc">
+            <center>Adres: </br>Sportpark "De Heihoef" </br>Roostenlaan 296, 5644 BS Eindhoven</center>
+          </div>
+        </ons-list-item>
+
+      <ons-list modifier="inset" style="margin-top: 10px">
+        <ons-list-item>
+          <div class="app-open-desc">
+            <center>Maandag</br><span class="label label-danger">Geen training</span></center>
+          </div>
+        </ons-list-item>
+        <ons-list-item>
+          <div class="app-open-desc">
+            <center>Dinsdag</br><span class="label label-default">20:00 - 22:00</span></center>
+          </div>
+        </ons-list-item>
+        <ons-list-item>
+          <div class="app-open-desc">
+            <center>Woensdag</br><span class="label label-default">20:00 - 22:00 (VOOR JEUGD)</span></center>
+          </div>
+        </ons-list-item>
+        <ons-list-item>
+          <div class="app-open-desc">
+            <center>Donderdag</br><span class="label label-default">20:00 - 22:00</span></center>
+          </div>
+        </ons-list-item>
+        <ons-list-item>
+          <div class="app-open-desc">
+            <center>Vrijdag</br><span class="label label-danger">Geen training</span></center>
+          </div>
+        </ons-list-item>
+        <ons-list-item>
+          <div class="app-open-desc">
+            <center>Zaterdag</br><span class="label label-danger">Geen training</span></center>
+          </div>
+        </ons-list-item>
+        <ons-list-item>
+          <div class="app-open-desc">
+            <center>Zondag</br><span class="label label-danger">Geen training</span></center>
+          </div>
+        </ons-list-item>
+      </ons-list>
+      
+    </div>
+  </div>
+
+</ons-page>

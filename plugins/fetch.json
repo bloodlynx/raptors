@@ -1,0 +1,27 @@
+{
+    "com.google.playservices": {
+        "source": {
+            "type": "registry",
+            "id": "com.google.playservices"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.pushwoosh.plugins.pushwoosh": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Pushwoosh/pushwoosh-phonegap-3.0-plugin.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

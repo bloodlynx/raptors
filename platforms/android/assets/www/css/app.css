@@ -1,0 +1,181 @@
+/* 
+* Roots v 2.0.0
+* Follow me @adanarchila at Codecanyon.net
+* URL: http://codecanyon.net/item/roots-phonegapcordova-multipurpose-hybrid-app/9525999
+* Don't forget to rate Roots if you like it! :)
+*/
+
+/* Insert here your custom CSS */
+
+.navigation-bar{
+	background-color: #384f7d;
+}
+
+.navigation-bar__title{
+	color:#fff;
+}
+/*schema overzicht*/
+
+.green{
+background-color:#a7e0d0;
+}
+.red{
+background-color:#ebafb3;
+}
+.listschemaheader{
+	height:75px;
+	text-align: center; 
+	background:#a7e0d0;
+}
+.schemadate{
+	padding-top:15px;
+}
+.list-item-container{
+	margin: 10px;
+	font-size: 12px;
+	height: 50px;
+}
+.list-item-left{
+	max-height:100%;
+	max-width:50px;
+    padding: 0;
+    margin-left:  -10px;
+    margin-right: -60px;
+    float: left;
+}
+.avator-red{
+	max-height:46px; 
+	max-width: 50px;
+	 border-style: solid;
+    border-color: #d65c65;
+}
+.avator-green{
+	max-height:46px; 
+	max-width: 50px;
+	 border-style: solid;
+    border-color: #24b289;
+}
+.list-item-right-red {
+  width:  12%;
+  height: 100%;
+  margin-right: -10px;
+  float: right;
+  background: #d65c65;
+  background-image: url("../images/nocar.png") ;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.list-item-right-green {
+  width:  12%;
+  height: 100%;
+  margin-right: -10px;
+  float: right;
+  background: #24b289;
+  background-image: url("../images/car.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.list-item-content {
+ padding:0!important;
+  margin-left: 50px;
+  float:left;
+
+}
+.name{
+	float:left;
+	text-align: left;
+	width: 90px;
+}
+div.position{
+	float:left;
+	text-align: left;
+	margin-left: 10px;
+
+}
+span.positioniconspan{
+	max-height: 50px;
+	max-width: 50px;
+	float:left;
+	margin-right: 20px;
+
+}
+img.positionicon{
+	max-height: 100%;
+	max-width: 50px;
+
+}
+
+
+
+
+/* beschikbaarheid */
+.beschikbaarheidprofile{
+	max-height: 150px!important;
+}
+
+.list-action-menu {
+  
+  background-color: #aaa;
+}
+.list-action-menu:active {
+  background-color: #666;
+}
+
+.list-action-item {
+  box-sizing: border-box;
+}
+.list-item-beschikbaarheid{
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color:  #666;
+	margin-bottom: 15px;
+}
+.name {
+	margin-top: 10px;
+  line-height: 1.2;
+}
+.desc {
+  line-height: 1.2;
+  font-size: 14px;
+  color: #999;
+}
+.beschikbaardatum{
+	width:100%;
+}
+
+
+
+
+
+/*navigation*/
+.deleted{
+background-color: #f9f9f9;
+
+}
+.navigationlist{
+	padding: 0 0 0 0 !important;
+	height: 75px;
+}
+.listname,.listlocation{
+width: 150px;
+float: left;
+font-size: 14px;
+margin-top: 15px;
+margin-left: 20px;
+}
+.listname{
+	width: 100px !important;
+}
+.headerdate{
+	text-align: center;
+	background-color: #384F7D;
+	color:#fff;
+}
+.navicon{
+	width: 20px;
+	margin-top: 15px;
+	margin-left: 10px;
+	color: #384F7D;
+	float: left;
+}
