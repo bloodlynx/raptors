@@ -1,9 +1,5 @@
 <ons-page>
-  <ons-toolbar modifier="transparent">    
-    <div class="right">
-      <ons-toolbar-button class="white" ng-click="menu.setMainPage('signup.html', {closeMenu: true})" >Registreer</ons-toolbar-button>
-    </div>
-  </ons-toolbar>
+<div class="blur">
 
   <div class="login-page">
     <div class="login-logo">
@@ -20,8 +16,23 @@
         <ons-button modifier="quiet" class="forgot-password">Wachtwoord vergeten?</ons-button>
       </div>
     </div>
-    <div class="blur">
       <img src="images/bg.png" class="bg">
     </div>
   </div>
+
+
+<div class="alert-dialog-mask"></div>
+
+<div class="alert-dialog">
+  <div class="alert-dialog-title">Welkom!</div>
+
+  <div class="alert-dialog-content">
+    U bent nu ingelogd...
+  </div>
+
+  <div class="alert-dialog-footer">
+    <button class="alert-dialog-button
+      alert-dialog-button--primal" onclick="menu.setMainPage('home.html')">OK</button>
+  </div>
+</div>
 </ons-page>

@@ -144,6 +144,36 @@ img.positionicon{
 	width:100%;
 }
 
+.colgroen {
+  border: 1px solid #ccc;
+  background: green;
+  overflow: hidden;
+  padding: 4px;
+  color: #999;
+}
+.colrood {
+  border: 1px solid #ccc;
+  background: red;
+  overflow: hidden;
+  padding: 4px;
+  color: #999;
+}
+
+.coloranje{
+  border: 1px solid #ccc;
+  background: orange;
+  overflow: hidden;
+  padding: 4px;
+  color: #999;
+}
+
+.colkruis {
+  border: 1px solid #ccc;
+  background: red;
+  overflow: hidden;
+  padding: 4px;
+  color: #999;
+}
 
 
 

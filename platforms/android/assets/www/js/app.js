@@ -697,21 +697,12 @@ var app1 = angular.module('test123',[])
     })
   })
 
-/*
-.directive('menu', function($timeout) {
-  return {
-        restrict: "A",
-        scope: true,
-        link: function($scope, element, attrs) {
-          element.bind("release", function(evt) {
-                  $timeout(function() {
-                     $scope.ons.menu.setSwipeable(true);
-                  });
-          });
-          element.bind("touch", function(evt) {
-              $scope.ons.menu.setSwipeable(false);
-          }); 
-        }
-      };
+.controller('AppController', function($scope) {
+  ons.createPopover('popover.html').then(function(popover) {
+    $scope.popover = popover;
+  });
+  
+  $scope.show = function(e) {
+    $scope.popover.show(e);
+  };
 });
-*/
