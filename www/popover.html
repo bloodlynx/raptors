@@ -1,1 +1,38 @@
-<p>test</p>
+<ons-page>
+<div class="blur">
+
+  <div class="login-page">
+    <div class="login-logo">
+      <h2 class="home-title">RAPTORS</h2>
+      <p class="subtitle">Trainingsapplicatie</p>
+    </div>
+    <div class="login-form">
+      <div class="form-wrapper">
+        <input type="email" class="text-input--underbar" placeholder="Email" value="">
+        <input type="password" class="text-input--underbar" placeholder="Wachtwoord" value="">
+        <br><br>
+        <ons-button modifier="large" onclick="menu.setMainPage('popover.html')">Login</ons-button>
+        <br><br>
+        <ons-button modifier="quiet" class="forgot-password">Wachtwoord vergeten?</ons-button>
+      </div>
+    </div>
+      <img src="images/bg.png" class="bg">
+    </div>
+  </div>
+
+
+<div class="alert-dialog-mask"></div>
+
+<div class="alert-dialog">
+  <div class="alert-dialog-title">Welkom!</div>
+
+  <div class="alert-dialog-content">
+    U bent nu ingelogd...
+  </div>
+
+  <div class="alert-dialog-footer">
+    <button class="alert-dialog-button
+      alert-dialog-button--primal" onclick="menu.setMainPage('home.html')">OK</button>
+  </div>
+</div>
+</ons-page>

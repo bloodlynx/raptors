@@ -15,8 +15,7 @@
         <input type="email" class="text-input--underbar" placeholder="Email" value="">
         <input type="password" class="text-input--underbar" placeholder="Wachtwoord" value="">
         <br><br>
-        <ons-button modifier="large" onclick="menu.setMainPage('home.html')">Login</ons-button>
-          <ons-button id="button" ng-click="show('#button')">Click me!</ons-button>
+        <ons-button modifier="large" onclick="menu.setMainPage('popover.html')">Login</ons-button>
         <br><br>
         <ons-button modifier="quiet" class="forgot-password">Wachtwoord vergeten?</ons-button>
       </div>
@@ -25,14 +24,4 @@
       <img src="images/bg.png" class="bg">
     </div>
   </div>
-
-
-<script type="text/ons-template" id="popover.html">
-  <ons-popover direction="up down" cancelable>
-    <div style="text-align: center; opacity: 0.5;">
-      <p>This is a popover!</p>
-      <p><small>Click the background to remove the popover.</small></p>
-    </div>
-  </ons-popover>
-</script>
 </ons-page>
