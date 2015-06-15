@@ -490,10 +490,9 @@ app.controller('branchesController', function($http, $scope, $compile, $sce){
     $scope.markers = [];
     $scope.infoWindow = {
         id: '',
-        title: '',
+        title: 'bob',
         content: '',
         address: '',
-        hours: '',
         phone: '',
         distance: ''
     };
@@ -558,8 +557,9 @@ app.controller('branchesController', function($http, $scope, $compile, $sce){
         $.each($scope.locations, function( index, value ) {
             var distance = Haversine( $scope.locations[ index ].custom_fields.location[0].lat, $scope.locations[ index ].custom_fields.location[0].lng, $scope.userLat, $scope.userLng );
             $scope.markers.push({
-                'id'        : index,
-                'title'     : $scope.locations[ index ].title,
+    
+                 'id'        : index,
+                'title'     : 'bob',
                 'content'     : $scope.locations[ index ].custom_fields.description[0],
                 'address'    : $scope.locations[ index ].custom_fields.address[0],
                 'hours'        : $scope.locations[ index ].custom_fields.hours[0],
@@ -583,6 +583,7 @@ app.controller('branchesController', function($http, $scope, $compile, $sce){
         $.each($scope.closestLocations, function( index, value ) {
             var distance = Haversine( $scope.locations[ value ].custom_fields.location[0].lat, $scope.locations[ value ].custom_fields.location[0].lng, $scope.userLat, $scope.userLng );
             $scope.markers.push({
+
                 'id'        : index,
                 'title'     : $scope.locations[ value ].title,
                 'content'     : $scope.locations[ value ].custom_fields.description[0],
@@ -590,7 +591,7 @@ app.controller('branchesController', function($http, $scope, $compile, $sce){
                 'hours'        : $scope.locations[ value ].custom_fields.hours[0],
                 'phone'        : $scope.locations[ value ].custom_fields.phone[0],
                 'distance'    : (Math.round(distance * 100) / 100),
-                'location'    : [$scope.locations[ value ].custom_fields.location[0].lat, $scope.locations[ value ].custom_fields.location[0].lng]
+                'location'    : ['51.458151','5.491873']
             });
         });
     }
@@ -598,12 +599,12 @@ app.controller('branchesController', function($http, $scope, $compile, $sce){
         $scope.marker = $scope.markers[this.id];
         $scope.infoWindow = {
             id        : $scope.marker.id,
-            title     : $scope.marker.title,
-            content    : $scope.marker.content,
-            address    : $scope.marker.address,
+            title     : 'bob',
+            content    : 'training 28-8-2015',
+            address    : 'Ajaxstraat 5 5631BR',
             hours    : $scope.marker.hours,
-            phone    : $scope.marker.phone,
-            distance: $scope.marker.distance
+            phone    : '0623242242',
+            distance: '4'
         };
         $scope.$apply();
         $scope.showInfoWindow(event, 'marker-info', this.getPosition());
@@ -619,7 +620,7 @@ app.controller('branchesController', function($http, $scope, $compile, $sce){
         window.location.href = 'maps://maps.apple.com/?q='+marker.location[0]+','+marker.location[1];
         
         // Google Maps (Android)
-        //var ref = window.open('http://maps.google.com/maps?q='+marker.location[0]+','+marker.location[1], '_system', 'location=yes');
+        var ref = window.open('http://maps.google.com/maps?q='+marker.location[0]+','+marker.location[1], '_system', 'location=yes');
     });
         
     // Call
@@ -696,21 +697,12 @@ var app1 = angular.module('test123',[])
     })
   })
 
-/*
-.directive('menu', function($timeout) {
-  return {
-        restrict: "A",
-        scope: true,
-        link: function($scope, element, attrs) {
-          element.bind("release", function(evt) {
-                  $timeout(function() {
-                     $scope.ons.menu.setSwipeable(true);
-                  });
-          });
-          element.bind("touch", function(evt) {
-              $scope.ons.menu.setSwipeable(false);
-          }); 
-        }
-      };
+.controller('AppController', function($scope) {
+  ons.createPopover('popover.html').then(function(popover) {
+    $scope.popover = popover;
+  });
+  
+  $scope.show = function(e) {
+    $scope.popover.show(e);
+  };
 });
-*/

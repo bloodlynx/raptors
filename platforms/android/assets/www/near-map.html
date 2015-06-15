@@ -9,7 +9,7 @@
     </div>
   </ons-toolbar>
   <div  class="map-fullscreen-container" >
-    <map zoom="8" center="{{ centerMap }}" class="fullscreen" zoom-control-options="{position:'RIGHT_TOP'}">
+    <map zoom="12" center="{{ centerMap }}" class="fullscreen" zoom-control-options="{position:'RIGHT_TOP'}">
       
       <info-window id="marker-info">
         <div>
@@ -18,11 +18,10 @@
             <p>{{ infoWindow.content }}</p>
             <ul>              
               <li><span class="ion-ios7-location"></span><p>{{ infoWindow.address }}</p></li>
-              <li><span class="ion-android-clock"></span><p>{{ infoWindow.hours }}</p></li>
               <li><span class="ion-ios7-telephone"></span><p>{{ infoWindow.phone }}</p></li>
-              <li><span class="ion-model-s"></span><p>{{ infoWindow.distance }} km away</p></li>
+              <li><span class="ion-model-s"></span><p>{{ infoWindow.distance }} km hier vandaan</p></li>
             </ul>
-            <a href="#" class="button get-directions" data-marker="{{ infoWindow.id }}">Get Directions</a>
+            <a href="#" class="button get-directions" data-marker="{{ infoWindow.id }}">Ophalen</a>
           </div>
         </div>
       </info-window>
