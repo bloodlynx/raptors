@@ -1,9 +1,5 @@
 <ons-page>
-  <ons-toolbar modifier="transparent"> 
-  <div class="right">
-      <ons-toolbar-button class="white" ng-click="menu.setMainPage('login.html', {closeMenu: true})" >Login</ons-toolbar-button>
-    </div>   
-  </ons-toolbar>
+    <div class="blur">
 
   <div class="signup-page">
     <div class="signup-logo">
@@ -46,8 +42,6 @@
         </ons-row>
       </div>
     </div>
-
-    <div class="blur">
       <img src="images/bg.png" class="bg">
     </div>
   </div>
@@ -57,5 +51,19 @@
      <feGaussianBlur stdDeviation="10" />
      </filter>
   </svg> 
+  <div class="alert-dialog-mask"></div>
+
+<div class="alert-dialog">
+  <div class="alert-dialog-title">Welkom!</div>
+
+  <div class="alert-dialog-content">
+    Uw account is aangemaakt!
+  </div>
+
+  <div class="alert-dialog-footer">
+    <button class="alert-dialog-button
+      alert-dialog-button--primal" onclick="menu.setMainPage('login.html')">OK</button>
+  </div>
+</div>
 
 </ons-page>
