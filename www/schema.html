@@ -3,7 +3,7 @@
     <div class="left">
       <ons-toolbar-button ng-click="menu.toggle()"><ons-icon icon="ion-navicon-round" fixed-width="false"></ons-icon></ons-toolbar-button>
     </div>
-    <div class="center">LOCATIE VELD</div>
+    <div class="center">SCHEMA</div>
   </ons-toolbar>
 
       <ons-list>
@@ -19,7 +19,7 @@
           </div>
         </ons-list-header></br>
          <center><ons-row>
-    <ons-col class="colgroen">13</ons-col>
+    <ons-col class="colgroen" onclick="menu.setMainPage('groen.html')">13</ons-col>
     <ons-col class="colrood">5</ons-col>
     <ons-col class="coloranje">3</ons-col>
     <ons-col class="colkruis">20</ons-col>
@@ -29,20 +29,28 @@
             <img src="images/profile_pics/profile_adam.jpg" class="avator-green">
           </div>
            <div class="list-item-content">
-              <div class="name">Adam de Boer
-              </div>
-              <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
+              <div class="name">Adam de Boer </br>Quater Back
             </div>
           </div>
+        </ons-list-item>
+        <ons-list-item  class="list-item-container green ">
+          <div class="list-item-left">
+            <img src="images/profile_pics/profile_james.jpg" class="avator-green">
+          </div>
+           <div class="list-item-content">
+              <div class="name">Bob de Laat </br>Wide receiver
+              </div>
+            </div><div class="cross"><ons-icon icon="ion-checkmark-round"><ons-icon>
+          <div class="list-item-right-red"><ons-icon icon="ion-model-s"></ons-icon>
+          </div></div>
         </ons-list-item>
         <ons-list-item  class="list-item-container orange ">
           <div class="list-item-left">
             <img src="images/profile_pics/profile_james.jpg" class="avator-orange">
           </div>
            <div class="list-item-content">
-              <div class="name">Bob de Laat
+              <div class="name">Nieuwe boy </br>Wide receiver
               </div>
-              </span>Wide receiver</div>
             </div><div class="cross"><ons-icon icon="ion-close-round"><ons-icon>
           <div class="list-item-right-red"><ons-icon icon="ion-model-s"></ons-icon>
           </div></div>
@@ -52,24 +60,30 @@
              <img src="images/profile_pics/profile_kevin.jpg" class="avator-red">
           </div>
            <div class="list-item-content">
-              <div class="name">Richard de vries
+              <div class="name">Richard de vries </br>Runningback
               </div>
-             <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
             </div>
           <div class="list-item-right-red">
           </div>
         </ons-list-item>
-           <ons-list-item  class="list-item-container green">
+        <ons-list-item  class="list-item-container grey">
+          <div class="list-item-left">
+             <img src="images/profile_pics/profile_kevin.jpg" class="avator-grey">
+          </div>
+           <div class="list-item-content">
+              <div class="name">Richard de vries </br>Runningback
+              </div>
+            </div>
+          <div class="list-item-right-grey">
+          </div>
+        </ons-list-item>
+                <ons-list-item  class="list-item-container green">
           <div class="list-item-left">
             <img src="images/profile_pics/profile_adam.jpg" class="avator-green">
           </div>
            <div class="list-item-content">
-              <div class="name">Adam de Boer
-              </div>
-              <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
+              <div class="name">Adam de Boer </br>Quater Back
             </div>
-          <div class="list-item-right-green">
-            <span class="car"><img sr=""></span>
           </div>
         </ons-list-item>
         <ons-list-item  class="list-item-container green ">
@@ -77,36 +91,52 @@
             <img src="images/profile_pics/profile_james.jpg" class="avator-green">
           </div>
            <div class="list-item-content">
-              <div class="name">Daniel de wit
+              <div class="name">Bob de Laat </br>Wide receiver
               </div>
-              <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
-            </div>
-          <div class="list-item-right-red">
+            </div><div class="cross"><ons-icon icon="ion-checkmark-round"><ons-icon>
+          <div class="list-item-right-red"><ons-icon icon="ion-model-s"></ons-icon>
+          </div></div>
+        </ons-list-item>
+        <ons-list-item  class="list-item-container orange ">
+          <div class="list-item-left">
+            <img src="images/profile_pics/profile_james.jpg" class="avator-orange">
           </div>
+           <div class="list-item-content">
+              <div class="name">Nieuwe boy </br>Wide receiver
+              </div>
+            </div><div class="cross"><ons-icon icon="ion-close-round"><ons-icon>
+          <div class="list-item-right-red"><ons-icon icon="ion-model-s"></ons-icon>
+          </div></div>
         </ons-list-item>
         <ons-list-item  class="list-item-container red">
           <div class="list-item-left">
              <img src="images/profile_pics/profile_kevin.jpg" class="avator-red">
           </div>
            <div class="list-item-content">
-              <div class="name">Richard de vries
+              <div class="name">Richard de vries </br>Runningback
               </div>
-             <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
             </div>
           <div class="list-item-right-red">
           </div>
         </ons-list-item>
-           <ons-list-item  class="list-item-container green">
+        <ons-list-item  class="list-item-container grey">
+          <div class="list-item-left">
+             <img src="images/profile_pics/profile_kevin.jpg" class="avator-grey">
+          </div>
+           <div class="list-item-content">
+              <div class="name">Richard de vries </br>Runningback
+              </div>
+            </div>
+          <div class="list-item-right-grey">
+          </div>
+        </ons-list-item>
+                <ons-list-item  class="list-item-container green">
           <div class="list-item-left">
             <img src="images/profile_pics/profile_adam.jpg" class="avator-green">
           </div>
            <div class="list-item-content">
-              <div class="name">Adam de Boer
-              </div>
-              <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
+              <div class="name">Adam de Boer </br>Quater Back
             </div>
-          <div class="list-item-right-green">
-            <span class="car"><img sr=""></span>
           </div>
         </ons-list-item>
         <ons-list-item  class="list-item-container green ">
@@ -114,137 +144,45 @@
             <img src="images/profile_pics/profile_james.jpg" class="avator-green">
           </div>
            <div class="list-item-content">
-              <div class="name">Daniel de wit
+              <div class="name">Bob de Laat </br>Wide receiver
               </div>
-              <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
-            </div>
-          <div class="list-item-right-red">
+            </div><div class="cross"><ons-icon icon="ion-checkmark-round"><ons-icon>
+          <div class="list-item-right-red"><ons-icon icon="ion-model-s"></ons-icon>
+          </div></div>
+        </ons-list-item>
+        <ons-list-item  class="list-item-container orange ">
+          <div class="list-item-left">
+            <img src="images/profile_pics/profile_james.jpg" class="avator-orange">
           </div>
+           <div class="list-item-content">
+              <div class="name">Nieuwe boy </br>Wide receiver
+              </div>
+            </div><div class="cross"><ons-icon icon="ion-close-round"><ons-icon>
+          <div class="list-item-right-red"><ons-icon icon="ion-model-s"></ons-icon>
+          </div></div>
         </ons-list-item>
         <ons-list-item  class="list-item-container red">
           <div class="list-item-left">
              <img src="images/profile_pics/profile_kevin.jpg" class="avator-red">
           </div>
            <div class="list-item-content">
-              <div class="name">Richard de vries
+              <div class="name">Richard de vries </br>Runningback
               </div>
-             <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
             </div>
           <div class="list-item-right-red">
           </div>
         </ons-list-item>
-           <ons-list-item  class="list-item-container green">
+        <ons-list-item  class="list-item-container grey">
           <div class="list-item-left">
-            <img src="images/profile_pics/profile_adam.jpg" class="avator-green">
+             <img src="images/profile_pics/profile_kevin.jpg" class="avator-grey">
           </div>
            <div class="list-item-content">
-              <div class="name">Adam de Boer
+              <div class="name">Richard de vries </br>Runningback
               </div>
-              <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
             </div>
-          <div class="list-item-right-green">
-            <span class="car"><img sr=""></span>
+          <div class="list-item-right-grey">
           </div>
         </ons-list-item>
-        <ons-list-item  class="list-item-container green ">
-          <div class="list-item-left">
-            <img src="images/profile_pics/profile_james.jpg" class="avator-green">
-          </div>
-           <div class="list-item-content">
-              <div class="name">Daniel de wit
-              </div>
-              <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
-            </div>
-          <div class="list-item-right-red">
-          </div>
-        </ons-list-item>
-        <ons-list-item  class="list-item-container red">
-          <div class="list-item-left">
-             <img src="images/profile_pics/profile_kevin.jpg" class="avator-red">
-          </div>
-           <div class="list-item-content">
-              <div class="name">Richard de vries
-              </div>
-             <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
-            </div>
-          <div class="list-item-right-red">
-          </div>
-        </ons-list-item>
-           <ons-list-item  class="list-item-container green">
-          <div class="list-item-left">
-            <img src="images/profile_pics/profile_adam.jpg" class="avator-green">
-          </div>
-           <div class="list-item-content">
-              <div class="name">Adam de Boer
-              </div>
-              <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
-            </div>
-          <div class="list-item-right-green">
-            <span class="car"><img sr=""></span>
-          </div>
-        </ons-list-item>
-        <ons-list-item  class="list-item-container green ">
-          <div class="list-item-left">
-            <img src="images/profile_pics/profile_james.jpg" class="avator-green">
-          </div>
-           <div class="list-item-content">
-              <div class="name">Daniel de wit
-              </div>
-              <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
-            </div>
-          <div class="list-item-right-red">
-          </div>
-        </ons-list-item>
-        <ons-list-item  class="list-item-container red">
-          <div class="list-item-left">
-             <img src="images/profile_pics/profile_kevin.jpg" class="avator-red">
-          </div>
-           <div class="list-item-content">
-              <div class="name">Richard de vries
-              </div>
-             <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
-            </div>
-          <div class="list-item-right-red">
-          </div>
-        </ons-list-item>
-           <ons-list-item  class="list-item-container green">
-          <div class="list-item-left">
-            <img src="images/profile_pics/profile_adam.jpg" class="avator-green">
-          </div>
-           <div class="list-item-content">
-              <div class="name">Adam de Boer
-              </div>
-              <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
-            </div>
-          <div class="list-item-right-green">
-            <span class="car"><img sr=""></span>
-          </div>
-        </ons-list-item>
-        <ons-list-item  class="list-item-container green ">
-          <div class="list-item-left">
-            <img src="images/profile_pics/profile_james.jpg" class="avator-green">
-          </div>
-           <div class="list-item-content">
-              <div class="name">Daniel de wit
-              </div>
-              <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
-            </div>
-          <div class="list-item-right-red">
-          </div>
-        </ons-list-item>
-        <ons-list-item  class="list-item-container red">
-          <div class="list-item-left">
-             <img src="images/profile_pics/profile_kevin.jpg" class="avator-red">
-          </div>
-           <div class="list-item-content">
-              <div class="name">Richard de vries
-              </div>
-             <div class="position"> <span class="positioniconspan"><img class="positionicon"src="images/position.png"></span>Quater Back</div>
-            </div>
-          <div class="list-item-right-red">
-          </div>
-        </ons-list-item>
-      </ons-list>
       <!--
       <div ng-app="test123">
         <div ng-controller="controller1">

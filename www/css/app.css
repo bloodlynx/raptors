@@ -26,6 +26,10 @@ background-color:#ebafb3;
 .orange{
 background-color:#fcf097;
 }
+
+.grey{
+background-color:lightgrey;
+}
 .listschemaheader{
 	height:75px;
 	text-align: center; 
@@ -66,6 +70,23 @@ background-color:#fcf097;
    border-style: solid;
     border-color: #ffe100;
 }
+
+.avator-grey{
+  max-height:46px; 
+  max-width: 50px;
+   border-style: solid;
+    border-color: darkgrey;
+}
+
+.list-item-right-grey {
+  max-width:  50px;
+  height: 100%;
+  margin-right: -10px;
+  float: right;
+  font-size: 24px;
+  text-align: center;
+  padding-right: 8px;
+}
 .list-item-right-red {
   max-width:  50px;
   height: 100%;
@@ -100,6 +121,7 @@ background-color:#fcf097;
 	text-align: left;
 	width: 90px;
 }
+
 div.position{
 	float:left;
 	text-align: left;
