@@ -21,9 +21,22 @@
     
   <ons-list>
       <ons-list-item class="list-item-beschikbaarheid" ng-repeat="a in [1,2,3]">
-        <ons-carousel  swipeable style="height:125px; width:100%;" overscrollable initial-index="1" auto-scroll direction="vertical"; >
+         <ons-carousel  swipeable style="height:125px; width:100%;" overscrollable initial-index="1" auto-scroll direction="horizontal" class="caro-beschikbaar">
           <ons-carousel-item class="list-action-menu">
-            list action menu
+          <ons-list modifier="inset" class="settings-list beschikbaar">
+        <ons-list-item>
+          Aanwezig 28-8-2015
+          <ons-switch modifier="list-item"></ons-switch>
+        </ons-list-item>
+        <ons-list-item>
+          afwezig 28-8-2015
+          <ons-switch modifier="list-item" checked></ons-switch>
+        </ons-list-item>
+        <ons-list-item>
+          Vervoer 28-8-2015
+          <ons-switch modifier="list-item" checked></ons-switch>
+        </ons-list-item>
+      </ons-list>
           </ons-carousel-item>
           <ons-carousel-item class="list-action-item">
             <ons-row>
@@ -38,3 +51,4 @@
       </ons-list-item>
     </ons-list>
 </ons-page>
+

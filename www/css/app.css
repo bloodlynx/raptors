@@ -148,7 +148,26 @@ img.positionicon{
 .beschikbaarheidprofile{
 	max-height: 150px!important;
 }
-
+.black-overlay{
+    background-color: #384f7d!important;
+      
+}
+.beschikbaar{
+width: 100%;
+height: 100%;
+border-radius:0;
+margin: 0;
+padding: 0;
+}
+.beschikbaar>ons-list-item{
+height: 33%
+}
+.caro-beschikbaar{
+  height:132px!important;
+}
+.profile-image{
+border: 2px solid white!important;
+}
 .list-action-menu {
   
   background-color: #aaa;
@@ -165,6 +184,7 @@ img.positionicon{
 	padding-right: 0px;
 	background-color:  #666;
 	margin-bottom: 15px;
+  height: 141px;
 }
 .name {
 	margin-top: 10px;
