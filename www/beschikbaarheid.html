@@ -20,23 +20,50 @@
   </div></br>
     
   <ons-list>
-      <ons-list-item class="list-item-beschikbaarheid" ng-repeat="a in [1,2,3]">
+      <ons-list-item class="list-item-beschikbaarheid">
          <ons-carousel  swipeable style="height:125px; width:100%;" overscrollable initial-index="1" auto-scroll direction="horizontal" class="caro-beschikbaar">
           <ons-carousel-item class="list-action-menu">
-          <div class="switches">
+                   <center> <div class="switches">
         <div>
-          Aanwezig 28-8-2015
-          <ons-switch modifier="list-item"></ons-switch>
+        Training 28-8-2015
+          
        </div>
         <div>
-          afwezig 28-8-2015
-          <ons-switch modifier="list-item" checked></ons-switch>
+            <ons-row>
+             <ons-col>
+              Aanwezig 
+             </ons-col>
+             <ons-col>
+             Afwezig
+             </ons-col>
+             <ons-col>
+              Vervoer nodig
+             </ons-col>
           </div>
-        <div>
-          Vervoer 28-8-2015
-          <ons-switch modifier="list-item" checked></ons-switch>
+          <div>
+          <ons-row>
+          <ons-col>
+         <label class="checkbox">
+           <input type="checkbox">
+             <div class="checkbox__checkmark"></div>
+           </label>
+         </ons-col>
+           <ons-col>
+           <label class="checkbox">
+           <input type="checkbox">
+             <div class="checkbox__checkmark"></div>
+           </label>
+           </ons-col>
+           <ons-col>
+           <label class="checkbox">
+           <input type="checkbox">
+             <div class="checkbox__checkmark"></div>
+           </label>
+           </ons-col>
+         </ons-row>
+       </center>
          </div>
-         </div>
+       </div>
           </ons-carousel-item>
           <ons-carousel-item class="list-action-item">
             <ons-row>
@@ -49,5 +76,62 @@
           </ons-carousel-item>
         </ons-carousel>
       </ons-list-item>
+      <ons-list-item class="list-item-beschikbaarheid">
+         <ons-carousel  swipeable style="height:125px; width:100%;" overscrollable initial-index="1" auto-scroll direction="horizontal" class="caro-beschikbaar">
+          <ons-carousel-item class="list-action-menu">
+                   <center> <div class="switches">
+        <div>
+        Training 28-8-2015
+          
+       </div>
+        <div>
+            <ons-row>
+             <ons-col>
+              Aanwezig 
+             </ons-col>
+             <ons-col>
+             Afwezig
+             </ons-col>
+             <ons-col>
+              Vervoer nodig
+             </ons-col>
+          </div>
+          <div>
+          <ons-row>
+          <ons-col>
+         <label class="checkbox">
+           <input type="checkbox">
+             <div class="checkbox__checkmark"></div>
+           </label>
+         </ons-col>
+           <ons-col>
+           <label class="checkbox">
+           <input type="checkbox">
+             <div class="checkbox__checkmark"></div>
+           </label>
+           </ons-col>
+           <ons-col>
+           <label class="checkbox">
+           <input type="checkbox">
+             <div class="checkbox__checkmark"></div>
+           </label>
+           </ons-col>
+         </ons-row>
+       </center>
+         </div>
+       </div>
+          </ons-carousel-item>
+          <ons-carousel-item class="list-action-item">
+            <ons-row>
+              <ons-col>
+                <div class="beschikbaardatum">
+                  datum:27-9-2015 beschikaar:
+                </div>
+              </ons-col>
+            </ons-row>
+          </ons-carousel-item>
+        </ons-carousel>
+      </ons-list-item>
+    </list>
 </ons-page>
 
