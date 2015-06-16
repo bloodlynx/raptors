@@ -140,37 +140,6 @@ img.positionicon{
 	max-width: 50px;
 
 }
-.colgroen {
-  border: 1px solid #333;
-  background: #a7e0d0;
-  overflow: hidden;
-  padding: 4px;
-  color: #333;
-}
-.colrood {
-  border: 1px solid #333;
-  background: #ebafb3;
-  overflow: hidden;
-  padding: 4px;
-  color: #333;
-}
-
-.coloranje{
-  border: 1px solid #333;
-  background: #fcf097;
-  overflow: hidden;
-  padding: 4px;
-  color: #333;
-}
-
-.colkruis {
-  border: 1px solid #333;
-  background: lightgrey;
-  overflow: hidden;
-  padding: 4px;
-  color: #333;
-}
-
 
 
 
@@ -215,7 +184,7 @@ border: 2px solid white!important;
 	padding-right: 0px;
 	background-color:  #666;
 	margin-bottom: 15px;
-  height: 141px;
+  height: 138px;
 }
 .name {
 	margin-top: 10px;
@@ -229,12 +198,16 @@ border: 2px solid white!important;
 .beschikbaardatum{
 	width:100%;
 }
-
-
-/*switches*/
-.switch__input:checked{
-background-color: 
+.switches{
+ background-color: #F9F9F9;
+ height: 140px;
 }
+.switches>div{
+  border-bottom: 1px solid #ddd;
+   background-color: #F9F9F9;
+  margin:0 10px 0 10px;
+}
+
 
 
 
