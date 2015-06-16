@@ -22,6 +22,10 @@ background-color:#a7e0d0;
 .red{
 background-color:#ebafb3;
 }
+
+.orange{
+background-color:#fcf097;
+}
 .listschemaheader{
 	height:75px;
 	text-align: center; 
@@ -55,15 +59,24 @@ background-color:#ebafb3;
 	 border-style: solid;
     border-color: #24b289;
 }
+
+.avator-orange{
+  max-height:46px; 
+  max-width: 50px;
+   border-style: solid;
+    border-color: #ffe100;
+}
 .list-item-right-red {
-  width:  12%;
+  max-width:  50px;
   height: 100%;
   margin-right: -10px;
   float: right;
-  background: #d65c65;
-  background-image: url("../images/nocar.png") ;
-  background-repeat: no-repeat;
-  background-position: center;
+  font-size: 24px;
+  text-align: center;
+  padding-right: 8px;
+}
+.cross {
+  float:right;
 }
 .list-item-right-green {
   width:  12%;
@@ -145,34 +158,34 @@ img.positionicon{
 }
 
 .colgroen {
-  border: 1px solid #ccc;
-  background: green;
+  border: 1px solid #333;
+  background: #a7e0d0;
   overflow: hidden;
   padding: 4px;
-  color: #999;
+  color: #333;
 }
 .colrood {
-  border: 1px solid #ccc;
-  background: red;
+  border: 1px solid #333;
+  background: #ebafb3;
   overflow: hidden;
   padding: 4px;
-  color: #999;
+  color: #333;
 }
 
 .coloranje{
-  border: 1px solid #ccc;
-  background: orange;
+  border: 1px solid #333;
+  background: #fcf097;
   overflow: hidden;
   padding: 4px;
-  color: #999;
+  color: #333;
 }
 
 .colkruis {
-  border: 1px solid #ccc;
-  background: red;
+  border: 1px solid #333;
+  background: lightgrey;
   overflow: hidden;
   padding: 4px;
-  color: #999;
+  color: #333;
 }
 
 
