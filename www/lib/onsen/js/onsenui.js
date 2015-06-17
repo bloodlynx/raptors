@@ -6917,6 +6917,8 @@ limitations under the License.
        * @param {Function} [options.callback]
        * @param {String} [options.animation]
        */
+
+
       next: function(options) {
         this.setActiveCarouselItemIndex(this.getActiveCarouselItemIndex() + 1, options);
       },

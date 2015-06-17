@@ -17,23 +17,23 @@
 /*schema overzicht*/
 
 .green{
-background-color:#a7e0d0;
+background-color:#329F5B;
 }
 .red{
-background-color:#ebafb3;
+background-color:#eb482f;
 }
 
 .orange{
-background-color:#fcf097;
+background-color:#F4B350;
 }
 
 .grey{
-background-color:lightgrey;
+background-color:#C5C3C6;
 }
 .listschemaheader{
 	height:75px;
 	text-align: center; 
-	background:#a7e0d0;
+	background:#329F5B;
 }
 .schemadate{
 	padding-top:15px;
@@ -52,30 +52,30 @@ background-color:lightgrey;
     float: left;
 }
 .avator-red{
-	max-height:46px; 
+	max-height:43px; 
 	max-width: 50px;
 	 border-style: solid;
-    border-color: #d65c65;
+    border-color: #eb482f;
 }
 .avator-green{
-	max-height:46px; 
+	max-height:43px; 
 	max-width: 50px;
 	 border-style: solid;
-    border-color: #24b289;
+    border-color: #329F5B;
 }
 
 .avator-orange{
-  max-height:46px; 
+  max-height:43px; 
   max-width: 50px;
    border-style: solid;
-    border-color: #ffe100;
+    border-color: #F4B350;
 }
 
 .avator-grey{
-  max-height:46px; 
+  max-height:43px; 
   max-width: 50px;
    border-style: solid;
-    border-color: darkgrey;
+    border-color: #C5C3C6;
 }
 
 .list-item-right-grey {
@@ -124,14 +124,14 @@ background-color:lightgrey;
 
 .colgroen {
   border: 1px solid #333;
-  background: #a7e0d0;
+  background: #329F5B;
   overflow: hidden;
   padding: 4px;
   color: #333;
 }
 .colrood {
   border: 1px solid #333;
-  background: #ebafb3;
+  background: #eb482f;
   overflow: hidden;
   padding: 4px;
   color: #333;
@@ -139,7 +139,7 @@ background-color:lightgrey;
 
 .coloranje{
   border: 1px solid #333;
-  background: #fcf097;
+  background: #F4B350;
   overflow: hidden;
   padding: 4px;
   color: #333;
@@ -147,7 +147,7 @@ background-color:lightgrey;
 
 .colkruis {
   border: 1px solid #333;
-  background: lightgrey;
+  background: #C5C3C6;
   overflow: hidden;
   padding: 4px;
   color: #333;
@@ -171,37 +171,6 @@ img.positionicon{
 	max-width: 50px;
 
 }
-.colgroen {
-  border: 1px solid #333;
-  background: #a7e0d0;
-  overflow: hidden;
-  padding: 4px;
-  color: #333;
-}
-.colrood {
-  border: 1px solid #333;
-  background: #ebafb3;
-  overflow: hidden;
-  padding: 4px;
-  color: #333;
-}
-
-.coloranje{
-  border: 1px solid #333;
-  background: #fcf097;
-  overflow: hidden;
-  padding: 4px;
-  color: #333;
-}
-
-.colkruis {
-  border: 1px solid #333;
-  background: lightgrey;
-  overflow: hidden;
-  padding: 4px;
-  color: #333;
-}
-
 
 
 
@@ -220,7 +189,7 @@ border-radius:0;
 margin: 0;
 padding: 0;
 }
-.beschikbaar>ons-list-item{
+.beschikbaar-ons-list-item{
 height: 33%
 }
 .caro-beschikbaar{
@@ -243,21 +212,21 @@ border: 2px solid white!important;
 .list-item-beschikbaarheid{
 	padding-left: 0px;
 	padding-right: 0px;
-	background-color: #a7e0d0;
+	background-color: #26A65B;
 	margin-bottom: 15px;
   height: 138px;
 }
 .list-item-beschikbaarheid-oranje{
   padding-left: 0px;
   padding-right: 0px;
-  background-color: #fcf097;
+  background-color: #F5AB35;
   margin-bottom: 15px;
   height: 138px;
 }
 .list-item-beschikbaarheid-rood{
   padding-left: 0px;
   padding-right: 0px;
-  background-color: #ebafb3;
+  background-color: #eb482f;
   margin-bottom: 15px;
   height: 138px;
 }

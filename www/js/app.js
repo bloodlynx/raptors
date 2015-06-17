@@ -6,8 +6,14 @@
  */
 
 // In this file we are goint to include all the Controllers our app it's going to need
+function change(_this){
+
+        console.log(angular.element(document.getElementById('kkkk')));
+}
 (function(){
   'use strict';
+
+          
 
   function initPushwoosh() {
     var pushNotification = window.plugins.pushNotification;
