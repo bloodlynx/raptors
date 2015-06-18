@@ -6,8 +6,14 @@
  */
 
 // In this file we are goint to include all the Controllers our app it's going to need
+function change(_this){
+
+        console.log(angular.element(document.getElementById('kkkk')));
+}
 (function(){
   'use strict';
+
+          
 
   function initPushwoosh() {
     var pushNotification = window.plugins.pushNotification;
@@ -490,7 +496,7 @@ app.controller('branchesController', function($http, $scope, $compile, $sce){
     $scope.markers = [];
     $scope.infoWindow = {
         id: '',
-        title: 'bob',
+        title: 'Bob de Laat',
         content: '',
         address: '',
         phone: '',
@@ -559,7 +565,7 @@ app.controller('branchesController', function($http, $scope, $compile, $sce){
             $scope.markers.push({
     
                  'id'        : index,
-                'title'     : 'bob',
+                'title'     : 'Bob de Laat',
                 'content'     : $scope.locations[ index ].custom_fields.description[0],
                 'address'    : $scope.locations[ index ].custom_fields.address[0],
                 'hours'        : $scope.locations[ index ].custom_fields.hours[0],
@@ -599,8 +605,8 @@ app.controller('branchesController', function($http, $scope, $compile, $sce){
         $scope.marker = $scope.markers[this.id];
         $scope.infoWindow = {
             id        : $scope.marker.id,
-            title     : 'bob',
-            content    : 'training 28-8-2015',
+            title     : 'Bob de Laat',
+            content    : 'Training 28-8-2015',
             address    : 'Ajaxstraat 5 5631BR',
             hours    : $scope.marker.hours,
             phone    : '0623242242',
